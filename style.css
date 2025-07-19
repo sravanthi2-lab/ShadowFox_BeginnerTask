@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 1em;
+}
+
+nav h1 {
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em 1em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About */
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.skills-list li {
+  background: #eee;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 1em;
+}
+
+.project-card img {
+  width: 50%;
+  border-radius: 1px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.75em;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  #about img {
+    margin: auto;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+}
